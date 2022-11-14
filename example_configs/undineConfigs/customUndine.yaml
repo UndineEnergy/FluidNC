@@ -1,0 +1,46 @@
+name: "nodeMCU32s undine custom welding test"
+board: "nodeMCU32s"
+verbose_errors: true
+
+stepping:
+  engine: RMT
+  idle_ms: 250
+  dir_delay_us: 1
+  pulse_us: 2
+  disable_delay_us: 0
+
+axes:
+  
+
+  x:
+    steps_per_mm: 800
+    max_rate_mm_per_min: 400
+    acceleration_mm_per_sec2: 25
+    max_travel_mm: 300
+    homing:
+      cycle: 2
+      mpos_mm: 10
+      positive_direction: false
+
+    motor0:
+      limit_all_pin: gpio.21:low:pu
+      stepstick:
+        direction_pin: gpio.4
+        step_pin: gpio.27
+
+  y:
+    steps_per_mm: 800
+    max_rate_mm_per_min: 400
+    acceleration_mm_per_sec2: 25
+    max_travel_mm: 1500
+    homing:
+      cycle: 2
+      mpos_mm: 10
+      positive_direction: false
+
+    motor0:
+      limit_all_pin: gpio.5:low:pu
+      stepstick:
+        direction_pin: gpio.22
+        step_pin: gpio.15
+
