@@ -12,9 +12,9 @@ axes:
   x:
     steps_per_mm: 25.49019608
     max_rate_mm_per_min: 10000.000
-    acceleration_mm_per_sec2: 200.000
+    acceleration_mm_per_sec2: 500.000
     max_travel_mm: 280.000
-    soft_limits: false
+    soft_limits: true
     homing:
       cycle: 2
       positive_direction: false
@@ -51,10 +51,11 @@ axes:
 
   y:
     steps_per_mm: 797.5830816
-    max_rate_mm_per_min: 450.000
+    max_rate_mm_per_min: 300.000
     acceleration_mm_per_sec2: 100.000
-    max_travel_mm: 1500.000
-    soft_limits: false
+    max_travel_mm: 1400.000
+
+    soft_limits: true
     homing:
       cycle: 2
       positive_direction: true
@@ -140,4 +141,4 @@ user_outputs:
   digital3_pin: NO_PIN
 
 start:
-  must_home: false
+  must_home: true
