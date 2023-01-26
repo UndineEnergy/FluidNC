@@ -22,7 +22,7 @@ axes:
       feed_mm_per_min: 100.000
       seek_mm_per_min: 1000.000
       settle_ms: 500
-      seek_scaler: 1.100
+      seek_scaler: 0.200
       feed_scaler: 1.100
 
     motor0:
@@ -42,8 +42,8 @@ axes:
         toff_disable: 0
         toff_stealthchop: 5
         toff_coolstep: 3
-        run_mode: CoolStep
-        homing_mode: CoolStep
+        run_mode: StealthChop
+        homing_mode: StealthChop
         use_enable: false
         step_pin: I2SO.2
         direction_pin: I2SO.1
@@ -51,7 +51,7 @@ axes:
 
   y:
     steps_per_mm: 797.5830816
-    max_rate_mm_per_min: 300.000
+    max_rate_mm_per_min: 400.000
     acceleration_mm_per_sec2: 100.000
     max_travel_mm: 1400.000
     soft_limits: true
@@ -60,9 +60,9 @@ axes:
       positive_direction: true
       mpos_mm: 0.000
       feed_mm_per_min: 50.000
-      seek_mm_per_min: 300.000
+      seek_mm_per_min: 400.000
       settle_ms: 500
-      seek_scaler: 1.100
+      seek_scaler: 0.2
       feed_scaler: 1.100
 
     motor0:
