@@ -10,19 +10,19 @@ stepping:
 axes:
   shared_stepper_disable_pin: NO_PIN
   x:
-    steps_per_mm: 25.49019608
-    max_rate_mm_per_min: 10000.000
-    acceleration_mm_per_sec2: 500.000
-    max_travel_mm: 280.000
+    steps_per_mm: 18.8816267
+    max_rate_mm_per_min: 800.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 290.000
     soft_limits: true
     homing:
       cycle: 2
       positive_direction: false
       mpos_mm: 0.000
       feed_mm_per_min: 100.000
-      seek_mm_per_min: 1000.000
+      seek_mm_per_min: 300.000
       settle_ms: 500
-      seek_scaler: 0.200
+      seek_scaler: 1.100
       feed_scaler: 1.100
 
     motor0:
@@ -88,6 +88,18 @@ axes:
         step_pin: I2SO.5
         direction_pin: I2SO.4
         disable_pin: I2SO.7
+
+  z:
+    steps_per_mm: 100.000
+
+    motor0:
+      solenoid:
+        output_pin: gpio.26
+        pwm_hz: 5000
+        off_percent: 0.000
+        pull_percent: 100.000
+        hold_percent: 100.000
+        direction_invert: false
 
 i2so:
   bck_pin: gpio.22
