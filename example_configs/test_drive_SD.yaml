@@ -47,6 +47,7 @@ macros:
   macro1:
   macro2:
   macro3:
+  weldStall: G1 f1 x-1&
 
 sdcard:
   card_detect_pin: NO_PIN
