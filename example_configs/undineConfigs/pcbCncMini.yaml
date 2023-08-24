@@ -40,7 +40,7 @@ axes:
         run_amps: 1
         hold_amps: 0.5
         microsteps: 16
-        stallguard: 60
+        stallguard: 50
         stallguard_debug: false
         toff_disable: 0
         toff_stealthchop: 5
@@ -75,7 +75,7 @@ axes:
         run_amps: 1
         hold_amps: 0.20
         microsteps: 16
-        stallguard: 61
+        stallguard: 55
         stallguard_debug: false
         toff_disable: 0
         toff_stealthchop: 5
@@ -141,16 +141,16 @@ sdcard:
   cs_pin: gpio.5
 
 control:
-  safety_door_pin: NO_PIN
-  reset_pin: NO_PIN
-  feed_hold_pin: NO_PIN
-  cycle_start_pin: NO_PIN
-  macro0_pin: NO_PIN
-  macro1_pin: NO_PIN
-  macro2_pin: NO_PIN
-  macro3_pin: NO_PIN
-  fault_pin: NO_PIN
-  estop_pin: NO_PIN
+  safety_door_pin: gpio.25:low:pu
+  #reset_pin: NO_PIN
+  #feed_hold_pin: NO_PIN
+  #cycle_start_pin: NO_PIN
+  #macro0_pin: NO_PIN
+  #macro1_pin: NO_PIN
+  #macro2_pin: NO_PIN
+  #macro3_pin: NO_PIN
+  #fault_pin: NO_PIN
+  #estop_pin: NO_PIN
 
 probe:
   pin: NO_PIN
