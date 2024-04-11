@@ -10,10 +10,10 @@ stepping:
 axes:
   shared_stepper_disable_pin: NO_PIN
   x:
-    steps_per_mm: 18.8816267
-    max_rate_mm_per_min: 800.000
+    steps_per_mm: 797.5830816
+    max_rate_mm_per_min: 400.000
     acceleration_mm_per_sec2: 100.000
-    max_travel_mm: 290.000
+    max_travel_mm: 550.000
     soft_limits: true
     homing:
       cycle: 2
